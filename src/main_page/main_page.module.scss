@@ -1,6 +1,5 @@
 body {
     //font: 100% system-ui, sans-serif;
-    overflow: hidden;
     margin: 0;
 }
 
@@ -16,28 +15,43 @@ body {
     top: 20px;
 }
 
-
 .hero_text {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #223c49;
     color: white;
     padding: 20px;
     margin-left: 110px;
-    
     font-family: "MotivaSansMedium";
-    font-size:xx-large
 
+    h1 {
+        font-size: 60px;
+
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: larger;
+    }
+}
+
+.art_type {
+    background: -webkit-linear-gradient(0deg, rgba(27, 222, 206, 1) 38%, rgba(204, 217, 28, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.code_type {
+    background: -webkit-linear-gradient(0deg, rgb(2, 105, 190) 38%, rgb(24, 144, 148) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero_img {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #223c49;
     color: white;
     margin-right: 110px;
-    width: 30%;
-    height: 50%;
+    width: 40%;
+    height: 80%;
 
 
     img {

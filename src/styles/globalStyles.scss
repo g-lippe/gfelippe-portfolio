@@ -1,6 +1,17 @@
 body {
-    background-color: #11232c;
+    background-color: #1b1c1d;
 }
+
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #414141;
+    border-radius: 20px;
+}
+
 
 
 
@@ -8,6 +19,22 @@ body {
     font-family: "MotivaSansMedium";
     src: local("MotivaSansMedium"),
         url("../assets/fonts/MotivaSansTest-Medium.otf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MotivaSansLight";
+    src: local("MotivaSansLight"),
+        url("../assets/fonts/MotivaSansTest-Light.otf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MotivaSansBold";
+    src: local("MotivaSansBold"),
+        url("../assets/fonts/MotivaSansTest-Bold.otf") format("truetype");
     font-weight: 500;
     font-display: swap;
 }
