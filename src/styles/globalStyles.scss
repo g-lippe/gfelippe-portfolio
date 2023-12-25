@@ -1,0 +1,13 @@
+body {
+    background-color: #11232c;
+}
+
+
+
+@font-face {
+    font-family: "MotivaSansMedium";
+    src: local("MotivaSansMedium"),
+        url("../assets/fonts/MotivaSansTest-Medium.otf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+}
