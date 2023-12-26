@@ -1,18 +1,18 @@
+@import "./variables.scss";
+
 body {
     background-color: #1b1c1d;
-    font-family: "MotivaSansMedium";
+    font-family: $font_medium;
+    color: #fff;
 }
-
 body::-webkit-scrollbar {
     width: 5px;
     background-color: #161616;
 }
-
 body::-webkit-scrollbar-thumb {
     background-color: #414141;
     border-radius: 20px;
 }
-
 
 
 @font-face {

@@ -1,10 +1,11 @@
-import styles from './main_page.module.scss'
 import HeroBanner from './hero_banner'
+import ReactSection from './react_section'
 
 export default function MainPage() {
-    return (
-        <>
-            <HeroBanner styles={styles} />
-        </>
-    )
+  return (
+    <>
+      <HeroBanner />
+      <ReactSection />
+    </>
+  )
 }
