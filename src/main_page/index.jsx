@@ -3,6 +3,8 @@ import HeroBanner from './hero_banner'
 
 export default function MainPage() {
     return (
-        <HeroBanner styles={styles}/>
+        <>
+            <HeroBanner styles={styles} />
+        </>
     )
 }

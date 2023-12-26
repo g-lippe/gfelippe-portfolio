@@ -4,6 +4,7 @@ function HeroBanner({ styles }) {
     return (
         <div className={styles.banner}>
             <div className={styles.hero_text}>
+                <h5>Hello there! I am</h5>
                 <h1 >Gabriel A. Felippe</h1>
                 <h2>
                     I combine <span className={styles.art_type}>art</span> and <span className={styles.code_type}>{'<code/>'}</span> into products
