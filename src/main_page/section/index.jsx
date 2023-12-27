@@ -7,7 +7,7 @@ function Section({title, list}) {
       <h2 >{title}</h2>
       <div className={styles.gallery}>
         {list.map(item => {
-          return <Card item={item} styles={styles}/>
+          return <Card key={item.id} item={item} styles={styles}/>
         })}
       </div>
     </div>
