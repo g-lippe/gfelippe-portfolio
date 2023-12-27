@@ -1,4 +1,4 @@
-import carbonAvatar from '../../assets/images/ice_cube_transparent.png'
+import heroImg from '../../assets/images/ice_cube_transparent.png'
 import styles from './hero_banner.module.scss'
 
 function HeroBanner() {
@@ -16,7 +16,7 @@ function HeroBanner() {
                 </p>
             </div>
             <div className={styles.hero_img}>
-                <img src={carbonAvatar} alt="avatar" />
+                <img src={heroImg} alt="avatar" />
             </div>
         </div>
     )
