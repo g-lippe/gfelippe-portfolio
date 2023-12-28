@@ -1,6 +1,7 @@
 import heroImg from '../../assets/images/ice_cube_transparent.png'
 import styles from './hero_banner.module.scss'
 
+
 function HeroBanner() {
     return (
         <div className={styles.banner}>

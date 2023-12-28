@@ -13,19 +13,19 @@
   },
   {
     "id" : 2,
-    "name" : "Project 2",
+    "name" : "Project 3",
     "media" : "/assets/images/other_projects/bounce_grenade.mp4",
     "img" : ""
   },
   {
     "id" : 3,
-    "name" : "Project 2",
-    "media" : "",
+    "name" : "Project 4",
+    "media" : "https://video.twimg.com/amplify_video/1360061497691541505/vid/910x720/UK_Pf1WH7wYTR2JC.mp4",
     "img" : ""
   },
   {
     "id" : 4,
-    "name" : "Project 2",
+    "name" : "Project 5",
     "media" : "",
     "img" : ""
   },
