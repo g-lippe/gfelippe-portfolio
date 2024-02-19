@@ -35,6 +35,8 @@
   position: relative;
   cursor: pointer;
   transition: 0.4s;
+  color: #fff;
+
 
   &:hover {
     border-color: $light_bright;
@@ -42,6 +44,10 @@
     inset 0 0 3px #fff,
     0px 0px 3px 0px #fff;
     transition: 0.1s;
+  }
+
+  a {
+    color: #fff;
   }
 
 

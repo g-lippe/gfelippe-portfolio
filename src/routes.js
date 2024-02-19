@@ -10,7 +10,7 @@ function AppRoutes() {
 
       <Routes>
         <Route path="/"         element={<Main />} />
-        <Route path="/project"  element={<Project />} />
+        <Route path="/project/:category/:id"  element={<Project />} />
         <Route path="*"         element={<div> Page not found </div>} />
       </Routes>
 

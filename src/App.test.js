@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import AppRoutes from './App';
+import AppRoutes from './routes';
 
 test('renders learn react link', () => {
   render(<AppRoutes />);

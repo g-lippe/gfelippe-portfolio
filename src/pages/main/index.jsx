@@ -1,14 +1,13 @@
 import HeroBanner from './hero_banner'
 import Section from './section'
-import react_projects from './react_projects.json'
-import other_projects from './other_projects.json'
+import projects from '../../assets/projects.json'
 
 export default function Main() {
   return (
     <div className='pagina_centro'>
       <HeroBanner />
-      <Section title={'React Projects'} list={react_projects} />
-      <Section title={'Other Projects'} list={other_projects} />
+      <Section title={'React Projects'} list={projects} category={'react'} />
+      <Section title={'Other Projects'} list={projects} category={'other'}/>
     </div>
   )
 }
