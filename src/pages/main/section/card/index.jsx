@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function Card({ item, category, styles }) {
   return (
-    <div className={styles.card} onClick={() => console.log('Test')}>
+    <div className={styles.card}>
       <Link to={`/project/${category}/${item.id}`}>
         <h5>{item.name}</h5>
         <img src={item.img} alt={item.img} />
