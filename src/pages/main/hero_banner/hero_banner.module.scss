@@ -1,4 +1,4 @@
-@import "../../styles/variables.scss";
+@import '../../../styles/variables.scss';
 
 .banner {
   width: 100%;
@@ -30,8 +30,6 @@
 
   .hero_text {
     color: hsla(0, 0%, 100%, 0.856);
-    padding: 20px;
-    margin-left: 110px;
 
 
     h1 {

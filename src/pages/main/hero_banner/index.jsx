@@ -1,4 +1,4 @@
-import heroImg from '../../assets/images/ice_cube_transparent.png'
+import heroImg from '../../../assets/images/ice_cube_transparent.png'
 import styles from './hero_banner.module.scss'
 
 
@@ -11,7 +11,7 @@ function HeroBanner() {
                 <h2>
                     I combine <span className={styles.art_type}>art</span> and <span className={styles.code_type}>{'<code/>'}</span> into products
                 </h2>
-                <p>
+                <p className={styles.typewritter}>
                     Welcome to my portfolio<br />
                     this is a compilation of all my public works and projects<br />
                 </p>
