@@ -8,9 +8,12 @@
     },
     {
       "id": 1,
-      "name": "Project 2",
+      "name": "Alura Space",
       "media": "",
-      "img": ""
+      "img": "https://i.imgur.com/6p7i77d.png",
+      "description": "Este foi um dos primeiros projetos que criei com a Alura. Ele se trata de uma galeria para fotos do espaço.",
+      "link": "https://rp01-alura-space.vercel.app"
+      
     },
     {
       "id": 2,
@@ -79,8 +82,8 @@
     },
     {
       "id": 3,
-      "name": "Video twitter",
-      "media": "https://video.twimg.com/amplify_video/1360061497691541505/vid/910x720/UK_Pf1WH7wYTR2JC.mp4",
+      "name": "Project 3",
+      "media": "",
       "img": ""
     },
     {

@@ -6,13 +6,17 @@
   gap: 24px;
   grid-template-columns: auto auto;
 
-  video {
+  .media {
     max-width: 70vh;
     border-radius: 8px;
     z-index: 1;
   }
 
 
+}
+
+a {
+  color: #fff;
 }
 
 .cont_description {

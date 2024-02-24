@@ -14,10 +14,15 @@ export default function Project() {
 
       <div className={styles.cont_upper}>
         <p>{project.description}</p>
-        <video autoPlay muted loop >
-          <source src={project.media} type="video/mp4" />
-        </video>
+        { project.media &&
+          <video className={styles.media} autoPlay muted loop >
+            <source src={project.media} type="video/mp4" />
+          </video>
+        }
+        { project.img && <img className={styles.media} src={project.img} alt={project.img} /> }
       </div>
+
+      { project.link && <p>Visite o projeto <a href={project.link}>aqui</a></p> }
 
 
     </div>
