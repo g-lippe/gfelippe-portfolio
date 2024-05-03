@@ -69,7 +69,6 @@ export default function CanvasA() {
             this.#ctx.clearRect(0, 0, this.#width, this.#height)
             this.#draw(this.#width/2, this.#height/2)
 
-            // console.log(deltaTime)
             flowFieldAnimation = requestAnimationFrame(this.animate.bind(this))
         }
 
