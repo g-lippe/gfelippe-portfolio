@@ -53,7 +53,7 @@ export default function CanvasA() {
       this.interval = 1000 / 60;
       this.timer = 0;
       // this.gradient;
-      this.cellSize = 16;
+      this.cellSize = 12;
       this.#createGradient();
       this.#ctx.strokeStyle = this.gradient;
       this.radius = 0
@@ -71,7 +71,7 @@ export default function CanvasA() {
     }
 
     #drawLine(angle, x, y) {
-      const length = 18
+      const length = 15
       this.#ctx.beginPath()
       this.#ctx.moveTo(x, y)
       this.#ctx.lineTo(x + Math.cos(angle) * length, y + Math.sin(angle) * length)
@@ -85,12 +85,12 @@ export default function CanvasA() {
         this.#ctx.clearRect(0, 0, this.#width, this.#height)
         this.radius += this.vr;
 
-        if (this.radius > 6 || this.radius < -6) this.vr *= -1
+        if (this.radius > 8 || this.radius < -8) this.vr *= -1
 
 
         for (let y = 0; y <= this.#height; y += this.cellSize) {
           for (let x = 0; x <= this.#width; x += this.cellSize) {
-            const angle = (Math.cos(x * 0.01) + Math.sin(y * 0.01)) * this.radius
+            const angle = (Math.cos(x * 0.02) + Math.sin(y * 0.02)) * this.radius
             this.#drawLine(angle, x, y)
           }
         }
