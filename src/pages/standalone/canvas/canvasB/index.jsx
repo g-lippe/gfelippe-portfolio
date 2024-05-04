@@ -169,7 +169,7 @@ export default function CanvasB() {
         <div>
           <label htmlFor="">Cell Size </label>
           <input type="number" step="0.01" value={cell_Size} onChange={(e) => { setCellSize(parseFloat(e.target.value)); resetAnimation() }} />
-          <input type="range" step="0.01"  min="5" max="50" value={cell_Size} style={{width: '1500px', margin:'5px'}} onChange={(e) => { setCellSize(parseFloat(e.target.value)); resetAnimation() }} />
+          <input type="range" step="0.01"  min="6" max="30" value={cell_Size} style={{width: '1500px', margin:'5px'}} onChange={(e) => { setCellSize(parseFloat(e.target.value)); resetAnimation() }} />
         </div>
 
 
