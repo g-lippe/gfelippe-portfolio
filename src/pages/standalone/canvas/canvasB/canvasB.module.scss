@@ -1,0 +1,38 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+
+.main {
+
+    padding: 15px;
+
+
+    .canvas_cont {
+    
+        padding: 20px;
+        // border: 1px solid #fff;
+        // border-radius: 12px;
+
+        position: relative;
+        margin: 5px 5px;
+        // top:75px;
+        // left: 75px;
+    
+        canvas 
+        {
+            position: absolute;
+            background: black;
+
+            border-radius: 12px;
+    
+            top: 15px;
+            left: 15px;
+        }
+    
+    }
+
+}
+
