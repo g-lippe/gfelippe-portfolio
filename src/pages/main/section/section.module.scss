@@ -21,9 +21,10 @@
   grid-template-columns: auto auto auto auto;
   // justify-content: space-between;
   padding: 20px;
-  height: 320px;
+  // height: 320px;
   overflow-y: scroll;
 }
+
 
 .card {
   border-style: solid;
@@ -37,38 +38,31 @@
   transition: 0.4s;
   color: #fff;
 
-
   &:hover {
     border-color: $light_bright;
+    min-width: 275px;
+    // min-height: 165px;
+
+    video, img {
+      opacity: 100%;
+      transition: 0.3s;
+    }
+
     // box-shadow: 
     // inset 0 0 3px #fff,
     // 0px 0px 3px 0px #fff;
     transition: 0.1s;
   }
 
-  a {
-    color: #fff;
-    text-shadow: 1px 1px 4px #000;
-    font-size: 18px;
-  }
-
-
   video {
     width: 100%;
     height: 100%;
     position: absolute;
     object-fit: cover;
-    z-index: 0;
+    z-index: -1;
     opacity: 40%;
     border-radius: 8px;
     transition: 0.5s;
-
-
-    &:hover {
-      opacity: 100%;
-      transition: 0.3s;
-    }
-
   }
 
   img {
@@ -76,17 +70,10 @@
     height: 100%;
     position: absolute;
     object-fit: cover;
-    z-index: 0;
+    z-index: -1;
     opacity: 40%;
     border-radius: 8px;
     transition: 0.5s;
-
-
-    &:hover {
-      opacity: 100%;
-      transition: 0.3s;
-    }
-
   }
 
 

@@ -1,5 +1,6 @@
+import NavBar from "components/navbar"
 import styles from "./canvasB.module.scss"
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Fragment } from 'react'
 
 export default function CanvasB() {
   var canvas = document.getElementById('canvas1')
@@ -144,50 +145,53 @@ export default function CanvasB() {
 
 
   return (
-    <div className={styles.main}>
+    <Fragment>
+      <NavBar />
+      <div className={styles.main}>
 
-      <h2>Canvas B</h2>
-
-      <div>
-
-        <div>
-          <label htmlFor="">Line Length </label>
-          <label htmlFor="">x: </label>
-          <input type="number" value={line_length.x} onChange={(e) => { setLineLength({ x: parseInt(e.target.value), y: line_length.y }); resetAnimation() }} />
-          <label htmlFor=""> y: </label>
-          <input type="number" value={line_length.y} onChange={(e) => { setLineLength({ x: line_length.x, y: parseInt(e.target.value) }); resetAnimation() }} />
-        </div>
+        <h2>Canvas B</h2>
 
         <div>
-          <label htmlFor="">Canvas Size </label>
-          <label htmlFor="">x: </label>
-          <input type="number" value={canvas_size.x} onChange={(e) => { setCanvasSize({ x: parseInt(e.target.value), y: canvas_size.y }); resetAnimation() }} />
-          <label htmlFor=""> y: </label>
-          <input type="number" value={canvas_size.y} onChange={(e) => { setCanvasSize({ x: canvas_size.x, y: parseInt(e.target.value) }); resetAnimation() }} />
+
+          <div>
+            <label htmlFor="">Line Length </label>
+            <label htmlFor="">x: </label>
+            <input type="number" value={line_length.x} onChange={(e) => { setLineLength({ x: parseInt(e.target.value), y: line_length.y }); resetAnimation() }} />
+            <label htmlFor=""> y: </label>
+            <input type="number" value={line_length.y} onChange={(e) => { setLineLength({ x: line_length.x, y: parseInt(e.target.value) }); resetAnimation() }} />
+          </div>
+
+          <div>
+            <label htmlFor="">Canvas Size </label>
+            <label htmlFor="">x: </label>
+            <input type="number" value={canvas_size.x} onChange={(e) => { setCanvasSize({ x: parseInt(e.target.value), y: canvas_size.y }); resetAnimation() }} />
+            <label htmlFor=""> y: </label>
+            <input type="number" value={canvas_size.y} onChange={(e) => { setCanvasSize({ x: canvas_size.x, y: parseInt(e.target.value) }); resetAnimation() }} />
+          </div>
+
+          <div>
+            <label htmlFor="">Cell Size </label>
+            <input type="number" step="0.01" value={cell_Size} onChange={(e) => { setCellSize(parseFloat(e.target.value)); resetAnimation() }} />
+            <input type="range" step="0.01" min="6" max="30" value={cell_Size} style={{ width: '1500px', margin: '5px' }} onChange={(e) => { setCellSize(parseFloat(e.target.value)); resetAnimation() }} />
+          </div>
+
+
+          <div>
+            <button onClick={() => resetAnimation()}>Apply</button>
+          </div>
+
+          <div>
+          </div>
+
         </div>
 
-        <div>
-          <label htmlFor="">Cell Size </label>
-          <input type="number" step="0.01" value={cell_Size} onChange={(e) => { setCellSize(parseFloat(e.target.value)); resetAnimation() }} />
-          <input type="range" step="0.01"  min="6" max="30" value={cell_Size} style={{width: '1500px', margin:'5px'}} onChange={(e) => { setCellSize(parseFloat(e.target.value)); resetAnimation() }} />
+        <div className={styles.canvas_cont}>
+          <p>Test</p>
+          <canvas id="canvas1"> </canvas>
         </div>
 
 
-        <div>
-          <button onClick={() => resetAnimation()}>Apply</button>
-        </div>
-
-        <div>
-        </div>
-
-      </div>
-
-      <div className={styles.canvas_cont}>
-        <p>Test</p>
-        <canvas id="canvas1"> </canvas>
-      </div>
-
-
-    </div >
+      </div >
+    </Fragment>
   )
 }

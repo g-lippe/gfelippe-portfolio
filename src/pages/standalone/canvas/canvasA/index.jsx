@@ -1,5 +1,6 @@
+import NavBar from "components/navbar"
 import styles from "./canvasA.module.scss"
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Fragment } from 'react'
 
 export default function CanvasA() {
   let canvas
@@ -119,8 +120,11 @@ export default function CanvasA() {
 
 
   return (
-    <div>
-      <canvas id="canvas1"> </canvas>
-    </div >
+    <Fragment>
+      <NavBar />
+      <div>
+        <canvas id="canvas1"> </canvas>
+      </div >
+    </Fragment>
   )
 }
